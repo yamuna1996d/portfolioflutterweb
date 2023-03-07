@@ -50,7 +50,7 @@ class Description extends StatelessWidget {
               pause: const Duration(seconds: 2),
               animatedTexts: [
                 TyperAnimatedText(
-                    "I'm developing mobile applications",
+                    "Hello I'm Yamuna, Flutter Developer, Freelancer",
                     textAlign: isVertical ? TextAlign.center : TextAlign.start,
                     textStyle: GoogleFonts.getFont('Poppins',
                         color: CustomColors.gray,
