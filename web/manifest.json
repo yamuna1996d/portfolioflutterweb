@@ -1,11 +1,11 @@
 {
-    "name": "khalid-alsaleh-dev",
-    "short_name": "khalid-alsaleh-dev",
+    "name": "yamuna-g",
+    "short_name": "yamuna-g",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#6AE99F",
     "theme_color": "#6AE99F",
-    "description": "Hello I'm Khalid Al-Saleh I'm developing mobile,frontend and backend applicationa",
+    "description": "Hello I'm yamuna, I'm developing mobile,frontend and backend applications",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
