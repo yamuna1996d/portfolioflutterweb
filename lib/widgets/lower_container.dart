@@ -163,9 +163,10 @@ class LowerContainer extends StatelessWidget {
               if (constraints.maxWidth >= Breakpoints.lg) {
                 return SizedBox(
                   width: width * 0.86,
-                  height: 800,
+                  height: 870,
                   child: StaggeredGridView.countBuilder(
                     crossAxisCount: 2,
+                    physics: NeverScrollableScrollPhysics(),
                     itemCount: 4,
                     itemBuilder: (BuildContext context, int index) => MouseRegion(
                       cursor: SystemMouseCursors.click,
@@ -237,6 +238,7 @@ class LowerContainer extends StatelessWidget {
                     child: StaggeredGridView.countBuilder(
                       crossAxisCount: 2,
                       itemCount: 4,
+                      physics: NeverScrollableScrollPhysics(),
                       itemBuilder: (BuildContext context, int index) => MouseRegion(
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
@@ -298,13 +300,89 @@ class LowerContainer extends StatelessWidget {
                     ),
                   ),
                 );
-              } else {
+              }
+              else if (constraints.maxWidth < Breakpoints.sm) {
+                return Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: SizedBox(
+                    width: width * 2,
+                    height: MediaQuery.of(context).size.height*2.5,
+                    child: StaggeredGridView.countBuilder(
+                      crossAxisCount: 2,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemCount: 4,
+                      itemBuilder: (BuildContext context, int index) => MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: (){
+                            launch(projects[index]['url']);
+                          },
+                          child: Container(
+                            // width: 370,
+                            padding: const EdgeInsets.symmetric(vertical: 7),
+                            decoration: BoxDecoration(
+                                color: CustomColors.background,
+                                border: Border.all(
+                                    color: CustomColors.primary)),
+                            child: Row(
+                              children: [
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(left: 20,top: 10),
+                                    child: Container(
+                                      height: 130,
+                                      width: 140,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(30),
+                                          image: DecorationImage(image: AssetImage(
+                                            projects[index]['image'],
+                                          ),fit: BoxFit.fill,)
+                                      ),),
+                                  ),
+                                ),
+                                const SizedBox(width: 20,),
+                                Column(
+                                  children: [
+                                    Center(
+                                        child: Text(projects[index]['project'],
+                                            style: GoogleFonts.getFont('Poppins',
+                                                color: CustomColors.primary, fontSize: 13))),
+                                    Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: SizedBox(
+                                        width: MediaQuery.of(context).size.width/2.3,
+                                        child: Text(
+                                            projects[index]['description'],
+                                            textAlign: TextAlign.center,
+                                            style: GoogleFonts.getFont('Poppins',
+                                                color: CustomColors.gray, fontSize: 13)),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      staggeredTileBuilder: (int index) =>
+                      const StaggeredTile.fit(
+                        4,
+                      ),
+                      mainAxisSpacing: 10.0,
+                      crossAxisSpacing: 40.0,
+                    ),
+                  ),
+                );
+              }
+              else {
                 return SizedBox(
-                  width: width * 3,
-                  height: 900,
+                  width: width * 2,
+                  height: MediaQuery.of(context).size.height*2.3,
                   child: StaggeredGridView.countBuilder(
                     crossAxisCount: 2,
                     itemCount: 4,
+                    physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (BuildContext context, int index) => MouseRegion(
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
@@ -383,6 +461,7 @@ class LowerContainer extends StatelessWidget {
                   child: StaggeredGridView.countBuilder(
                     crossAxisCount: 4,
                     itemCount: 2,
+                    physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (BuildContext context, int index) => MouseRegion(
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
@@ -443,15 +522,17 @@ class LowerContainer extends StatelessWidget {
                     crossAxisSpacing: 40.0,
                   ),
                 );
-              } else if (constraints.maxWidth < Breakpoints.lg &&
+              }
+              else if (constraints.maxWidth < Breakpoints.lg &&
                   constraints.maxWidth >= Breakpoints.sm) {
                 return Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: SizedBox(
                     width: width * 2,
-                    height: 360,
+                    height: MediaQuery.of(context).size.height/2,
                     child: StaggeredGridView.countBuilder(
                       crossAxisCount: 2,
+                      physics: NeverScrollableScrollPhysics(),
                       itemCount: 2,
                       itemBuilder: (BuildContext context, int index) => MouseRegion(
                         cursor: SystemMouseCursors.click,
@@ -514,13 +595,89 @@ class LowerContainer extends StatelessWidget {
                     ),
                   ),
                 );
-              } else {
+              }
+              else if (constraints.maxWidth < Breakpoints.lg &&
+                  constraints.maxWidth <= Breakpoints.sm) {
+                return Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: SizedBox(
+                    width: width * 2,
+                    height: MediaQuery.of(context).size.height*0.67,
+                    child: StaggeredGridView.countBuilder(
+                      crossAxisCount: 2,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemCount: 2,
+                      itemBuilder: (BuildContext context, int index) => MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: (){
+                            launch(ownPro[index]['url']);
+                          },
+                          child: Container(
+                            // width: 370,
+                            padding: const EdgeInsets.symmetric(vertical: 7),
+                            decoration: BoxDecoration(
+                                color: CustomColors.background,
+                                border: Border.all(
+                                    color: CustomColors.primary)),
+                            child: Row(
+                              children: [
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(left: 20,top: 10),
+                                    child: Container(
+                                      height: 130,
+                                      width: 140,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(30),
+                                          image: DecorationImage(image: AssetImage(
+                                            ownPro[index]['image'],
+                                          ),fit: BoxFit.fill,)
+                                      ),),
+                                  ),
+                                ),
+                                const SizedBox(width: 20,),
+                                Column(
+                                  children: [
+                                    Center(
+                                        child: Text(ownPro[index]['project'],
+                                            style: GoogleFonts.getFont('Poppins',
+                                                color: CustomColors.primary, fontSize: 13))),
+                                    Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: SizedBox(
+                                        width: MediaQuery.of(context).size.width/2.3,
+                                        child: Text(
+                                            ownPro[index]['description'],
+                                            textAlign: TextAlign.center,
+                                            style: GoogleFonts.getFont('Poppins',
+                                                color: CustomColors.gray, fontSize: 13)),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      staggeredTileBuilder: (int index) =>
+                      const StaggeredTile.fit(
+                        4,
+                      ),
+                      mainAxisSpacing: 10.0,
+                      crossAxisSpacing: 40.0,
+                    ),
+                  ),
+                );
+              }else {
                 return SizedBox(
                   width: width * 3,
                   height: 960,
                   child: StaggeredGridView.countBuilder(
                     crossAxisCount: 2,
                     itemCount: 2,
+                    physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (BuildContext context, int index) => MouseRegion(
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
