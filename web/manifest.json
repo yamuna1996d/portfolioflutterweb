@@ -1,11 +1,11 @@
 {
-    "name": "yamuna-g",
-    "short_name": "yamuna-g",
+    "name": "Yamuna-g",
+    "short_name": "Yamuna",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#6AE99F",
     "theme_color": "#6AE99F",
-    "description": "Hello I'm yamuna, I'm developing mobile,frontend and backend applications",
+    "description": "Hello I'm Yamuna, Flutter Developer, Freelancer",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
