@@ -26,7 +26,7 @@ class NavBarItem extends StatelessWidget {
           onTap: () => onTap(),
           child: Container(
             height: 40.0,
-            width: 50,
+            width: 70,
             alignment: Alignment.center,
             margin: const EdgeInsets.symmetric(horizontal: 18.0),
             child: Column(
@@ -40,7 +40,7 @@ class NavBarItem extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 12.0,
                     color: data.value
-                        ? CustomColors.primary
+                        ? Colors.orange
                         : Colors.white,
                   ),
                 ),
@@ -51,7 +51,7 @@ class NavBarItem extends StatelessWidget {
                     ? Container(
                         width: 40,
                         height: 1,
-                        color: CustomColors.primary,
+                        color: Colors.orange,
                       )
                     : const SizedBox.shrink()
               ],

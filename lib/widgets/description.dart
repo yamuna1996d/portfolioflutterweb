@@ -19,24 +19,28 @@ class Description extends StatelessWidget {
         crossAxisAlignment:
             isVertical ? CrossAxisAlignment.center : CrossAxisAlignment.start,
         children: [
-          Container(
-              margin: const EdgeInsets.symmetric(horizontal: 10),
-              width: 135,
-              height: 40,
-              alignment: Alignment.center,
-              color: CustomColors.primary,
-              child: Center(
-                  child: Text('Software Engineer',
-                      style: GoogleFonts.getFont('Days One',
-                          color: Colors.black, fontSize: 10)))),
+          Text('Software Developer, Freelancer',
+              style: GoogleFonts.getFont('Poppins',
+                  color: Colors.white, fontSize: 15)),
           SizedBox(height: 0.015 * width),
-          Text('Talk is cheap.',
-              style: GoogleFonts.getFont('Delius',
-                  color: Colors.white, fontSize: 30)),
-          const SizedBox(height: 5),
-          Text('Show me the code.',
-              style: GoogleFonts.getFont('Delius',
-                  color: Colors.white, fontSize: 30)),
+          RichText(
+            text:  TextSpan(
+              text: 'Hi, my name is ',
+              style: GoogleFonts.roboto(
+                  color: Colors.white, fontSize: 30),
+              children: [
+                TextSpan(
+                  text: 'Yamuna G',
+                  style: GoogleFonts.greatVibes(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.orange, fontSize: 30),
+                ),
+              ],
+            ),
+          ),
+          // Text('Yamuna',
+          //     style: GoogleFonts.getFont('Poppins',
+          //         color: Colors.white, fontSize: 30)),
           const SizedBox(height: 20),
           SizedBox(
             width: isVertical ? double.infinity : width * 0.29,
@@ -46,9 +50,9 @@ class Description extends StatelessWidget {
               pause: const Duration(seconds: 2),
               animatedTexts: [
                 TyperAnimatedText(
-                    "I'm developing mobile,frontend and backend applications",
+                    "I'm developing mobile applications",
                     textAlign: isVertical ? TextAlign.center : TextAlign.start,
-                    textStyle: GoogleFonts.getFont('Delius',
+                    textStyle: GoogleFonts.getFont('Poppins',
                         color: CustomColors.gray,
                         fontSize: 15)),
               ],
@@ -56,11 +60,11 @@ class Description extends StatelessWidget {
           ),
           InkWell(
             onTap: () async => !await launch(
-                'https://mail.google.com/mail/u/0/?fs=1&to=khalidlionel.2089@gmail.com&tf=cm'),
+                'https://mail.google.com/mail/u/0/?fs=1&to=yamunag19@gmail.com&tf=cm'),
             child: Text("Let's chat",
-                style: GoogleFonts.getFont('Delius',
+                style: GoogleFonts.getFont('Poppins',
                     decoration: TextDecoration.underline,
-                    color: CustomColors.primary,
+                    color: Colors.orange,
                     fontSize: 20)),
           )
         ],

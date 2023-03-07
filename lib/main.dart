@@ -12,10 +12,10 @@ void main() {
     theme: ThemeData(primaryColor:
      CustomColors.primary,
      splashColor: CustomColors.primary,
-     highlightColor:CustomColors.primary,
+     highlightColor:Colors.white,
      
      ),
-    title: 'khalid-alsaleh-dev',
+    title: 'Yamuna G',
     home: const Portfolio(),
     debugShowCheckedModeBanner: false,
   ));

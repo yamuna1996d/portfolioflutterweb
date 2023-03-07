@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/utils/breakpoints.dart';
 import 'package:portfolio/utils/custom_colors.dart';
 import 'package:portfolio/widgets/description.dart';
-import 'package:portfolio/widgets/khalid_image.dart';
+import 'package:portfolio/widgets/imageSection.dart';
 
 class UpperContainer extends StatelessWidget {
   final double width;
@@ -13,7 +13,7 @@ class UpperContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: width,
-      color: CustomColors.brightBackground,
+      //color: Colors.black,
       padding: const EdgeInsets.only(bottom:20),
       child: LayoutBuilder(builder: (context, consraints) {
         if (consraints.maxWidth >= Breakpoints.lg) {
@@ -26,7 +26,7 @@ class UpperContainer extends StatelessWidget {
                 width: width,
               ),
               const SizedBox(width: 20),
-              KhalidImage(
+              ImageSection(
                 width: width,
               )
             ],
@@ -36,7 +36,7 @@ class UpperContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(width: width * 0.07),
-              KhalidImage(width: (2 * width) - 0.16 * width),
+              ImageSection(width: (2 * width) - 0.12 * width),
               SizedBox(height: 0.05 * width),
               Description(
                 isVertical: true,
@@ -49,7 +49,7 @@ class UpperContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(width: width * 0.07),
-              Center(child: KhalidImage(width: 2 * width)),
+              Center(child: ImageSection(width: 2.6 * width)),
               SizedBox(height: 0.05 * width),
               Description(isVertical: true, width: width),
             ],

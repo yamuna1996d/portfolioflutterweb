@@ -49,9 +49,9 @@ class NavBar extends StatelessWidget {
               onTap: () {},
             ),
             NavBarItem(
-                text: 'Skills', onTap: () => scrollToWidgetByKey(skillsKey)),
+                text: 'Experience', onTap: () => scrollToWidgetByKey(skillsKey)),
             NavBarItem(
-              text: 'Intrests',
+              text: 'Projects',
               onTap: () => scrollToWidgetByKey(intrestsKey),
             ),
             const SizedBox(width: 60),
@@ -62,18 +62,18 @@ class NavBar extends StatelessWidget {
           NavBarItemWithIcon(
             text: 'github',
             icon: ImageAssetConstants.github,
-            url: 'https://github.com/khalid-alsaleh-dev',
+            url: 'https://github.com/yamuna1996d',
           ),
           SizedBox(width: 10),
-          NavBarItemWithIcon(
-              text: 'facebook',
-              icon: ImageAssetConstants.facebook,
-              url: 'https://www.facebook.com/khalid.alsaleh.52090/'),
-          SizedBox(width: 10),
+          // NavBarItemWithIcon(
+          //     text: 'facebook',
+          //     icon: ImageAssetConstants.facebook,
+          //     url: 'https://www.facebook.com/khalid.alsaleh.52090/'),
+          // SizedBox(width: 10),
           NavBarItemWithIcon(
               text: 'linkedIn',
               icon: ImageAssetConstants.linkedIn,
-              url: 'https://www.linkedin.com/in/khalid-al-saleh-3561881a8/'),
+              url: 'https://www.linkedin.com/in/yamuna-g-978088180'),
           SizedBox(width: 50),
         ])
       ])

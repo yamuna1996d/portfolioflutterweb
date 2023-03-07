@@ -15,16 +15,16 @@ class Info extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-              '• I’m studying informatics engineering at the University Of Aleppo.',
+              '• I have completed MCA from Mount Zion College of Engineering',
               style: GoogleFonts.getFont('Delius',
                   color: CustomColors.gray, fontSize: 13)),
           const SizedBox(height: 20),
-          Text('• The Only thing that makes me feel happy is coding.',
+          Text('• I have completed Flutter Course with Node js &Mongo Db& AWS cloud hosting course from Logix Space Technologies Pvt.Ltd.',
               style: GoogleFonts.getFont('Delius',
                   color: CustomColors.gray, fontSize: 13)),
           const SizedBox(height: 20),
           Text(
-              '• I always try to discover the new and the best technologies and use them to make my client feel comfortable and satisfied. ',
+              '• I always try to discover new and the best technologies and use them. ',
               style: GoogleFonts.getFont('Delius',
                   color: CustomColors.gray, fontSize: 13)),
         ],

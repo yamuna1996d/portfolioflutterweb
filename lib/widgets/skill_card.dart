@@ -5,7 +5,7 @@ import 'package:portfolio/utils/custom_colors.dart';
 
 class SkillCard extends StatelessWidget {
   final String title;
-  final String description;
+  final String description, company;
   final double width;
   final double ratio;
   final String icon;
@@ -13,6 +13,7 @@ class SkillCard extends StatelessWidget {
       {required this.title,
       required this.description,
       required this.icon,
+      required this.company,
       required this.width,
       required this.ratio,
       Key? key})
@@ -21,7 +22,7 @@ class SkillCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: CustomColors.brightBackground,
+      color: CustomColors.background,
       child: SizedBox(
         width: width * ratio,
         child: Stack(
@@ -34,17 +35,15 @@ class SkillCard extends StatelessWidget {
                 children: [
                   Text(title,
                       style: GoogleFonts.getFont('Delius',
-                          color: CustomColors.primary,
-                          fontSize: 16)),
+                          color: CustomColors.primary, fontSize: 16)),
                   const SizedBox(height: 8),
-                  Text("Freelancing",
+                  Text(company,
                       style: GoogleFonts.getFont('Delius',
                           color: Colors.white, fontSize: 15)),
                   const SizedBox(height: 10),
                   Text(description,
                       style: GoogleFonts.getFont('Delius',
-                          color: CustomColors.gray,
-                          fontSize: 12)),
+                          color: CustomColors.gray, fontSize: 12)),
                 ],
               ),
             ),
@@ -53,8 +52,8 @@ class SkillCard extends StatelessWidget {
                     child: Image.asset(icon),
                     top: 20,
                     right: 20,
-                    width: 20,
-                    height: 18)
+                    width: 30,
+                    height: 38)
                 : const SizedBox.shrink()
           ],
         ),

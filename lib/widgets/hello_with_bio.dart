@@ -14,7 +14,7 @@ class HelloWithBio extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Hello!  I’m Khalid Al-Saleh',
+          Text('Hello!  I’m Yamuna ,\nCurrently working as a Software Developer in Techins Software Solution LLP, Kottayam.',
               style: GoogleFonts.getFont('Delius',
                   color: Colors.white, fontSize: 26)),
           const SizedBox(height: 5),

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/utils/custom_colors.dart';
 import 'package:portfolio/utils/image_asset_constants.dart';
 
-class KhalidImage extends StatelessWidget {
+class ImageSection extends StatelessWidget {
   final double width;
-  const KhalidImage({
+  const ImageSection({
     required this.width,
     Key? key,
   }) : super(key: key);
@@ -15,10 +15,10 @@ class KhalidImage extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Container(
-          constraints:const BoxConstraints(maxWidth:370),
+          constraints:const BoxConstraints(maxWidth:570),
           child: Image.asset(
             ImageAssetConstants.khalid,
-            width: width * 0.29,
+            width: width * 0.43,
             height: width * 0.3,
           ),
         ),
@@ -26,14 +26,14 @@ class KhalidImage extends StatelessWidget {
           top: width * 0.17,
           left: 0,
           child: Image.asset(
-            ImageAssetConstants.pythonCircle,
-            width: width * 0.07,
-            height: width * 0.07,
+            ImageAssetConstants.flutterCircle,
+            width: width * 0.05,
+            height: width * 0.05,
           ),
         ),
         Positioned(
-          top: width * 0.19,
-          right: width * 0.010,
+          top: width * 0.22,
+          left: width * 0.30,
           child: Image.asset(
             ImageAssetConstants.flutterCircle,
             width: width * 0.083,
@@ -41,10 +41,10 @@ class KhalidImage extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: width * 0.06,
+          top: width * 0.05,
           right: width * 0.016,
           child: Image.asset(
-            ImageAssetConstants.javaCircle,
+            ImageAssetConstants.flutterCircle,
             width: width * 0.06,
             height: width * 0.058,
           ),

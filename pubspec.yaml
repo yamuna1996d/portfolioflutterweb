@@ -29,15 +29,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/logo.png
-    - assets/images/github.png
-    - assets/images/facebook.png
-    - assets/images/linkedIn.png
-    - assets/images/flutter.png
-    - assets/images/java.png
-    - assets/images/python.png
-    - assets/images/khalid.png
-    - assets/images/flutter_circle.png
-    - assets/images/java_circle.png
-    - assets/images/python_circle.png
-    - assets/images/backend_icon.png
+
+    - assets/images/
