@@ -1,5 +1,4 @@
-# Flutter Portfolio App 👏👍🔥
 
-This project designed using figma and built using flutter.
+This project built using flutter.
 
 
