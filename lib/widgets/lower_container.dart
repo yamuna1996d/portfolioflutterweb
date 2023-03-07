@@ -228,7 +228,8 @@ class LowerContainer extends StatelessWidget {
                     crossAxisSpacing: 40.0,
                   ),
                 );
-              } else if (constraints.maxWidth < Breakpoints.lg &&
+              }
+              else if (constraints.maxWidth < Breakpoints.lg &&
                   constraints.maxWidth >= Breakpoints.sm) {
                 return Padding(
                   padding: const EdgeInsets.all(10.0),
