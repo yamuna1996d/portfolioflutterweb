@@ -19,9 +19,9 @@ class Description extends StatelessWidget {
         crossAxisAlignment:
             isVertical ? CrossAxisAlignment.center : CrossAxisAlignment.start,
         children: [
-          Text('Software Developer, Freelancer',
-              style: GoogleFonts.getFont('Poppins',
-                  color: Colors.white, fontSize: 15)),
+          // Text('Software Developer, Freelancer',
+          //     style: GoogleFonts.getFont('Poppins',
+          //         color: Colors.white, fontSize: 15)),
           SizedBox(height: 0.015 * width),
           RichText(
             text:  TextSpan(
@@ -50,7 +50,7 @@ class Description extends StatelessWidget {
               pause: const Duration(seconds: 2),
               animatedTexts: [
                 TyperAnimatedText(
-                    "Hello I'm Yamuna, Flutter Developer, Freelancer",
+                    "Flutter Developer, Freelancer",
                     textAlign: isVertical ? TextAlign.center : TextAlign.start,
                     textStyle: GoogleFonts.getFont('Poppins',
                         color: CustomColors.gray,

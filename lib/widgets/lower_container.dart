@@ -69,9 +69,9 @@ class LowerContainer extends StatelessWidget {
                           company: "Software Developer - Flutter",
                           description:
                           ' * Developed a highly functional set of flutter applications for SPC PRANA.\n\n'
-                              ' * Developed E-commerce flutter application allows students to purchase course materials for \n\tSPC PRANA INSIGHT.\n\n'
+                              ' * Developed E-commerce flutter application allows students \n\tto purchase course materials for SPC PRANA INSIGHT.\n\n'
                               '* Integrated E-commerce applications with RAZORPAY.\n\n'
-                              '* Designed and developed a complete office management application for AXYZ ventures using\n\tFlutter and Firebase',
+                              '* Designed and developed a complete office management\napplication for AXYZ ventures using Flutter and Firebase',
                           icon: ImageAssetConstants.folea,
                           width: width,
                           ratio: 0.35,
@@ -118,9 +118,9 @@ class LowerContainer extends StatelessWidget {
                             company: "Software Developer - Flutter",
                             description:
                             ' * Developed a highly functional set of flutter applications for SPC PRANA.\n\n'
-                                ' * Developed E-commerce flutter application allows students to purchase\n\tcourse materials for SPC PRANA INSIGHT.\n\n'
+                                '* Developed E-commerce flutter application allows students to purchase course materials for SPC PRANA INSIGHT.\n\n'
                                 '* Integrated E-commerce applications with RAZORPAY.\n\n'
-                                '* Designed and developed a complete office management application for\n\tAXYZ ventures using Flutter and Firebase',
+                                '* Designed and developed a complete office management\n\tapplication for AXYZ ventures using Flutter and Firebase',
                             icon: ImageAssetConstants.folea,
                             width: 2 * width,
                             ratio: 0.45),
