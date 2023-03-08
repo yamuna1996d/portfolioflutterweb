@@ -14,6 +14,15 @@ class Info extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text("• As a two-year experienced Flutter developer, I have honed my skills in creating dynamic and user-friendly mobile applications with a focus on performance and scalability.",
+              style: GoogleFonts.getFont('Delius',
+                  color: CustomColors.gray, fontSize: 13)),
+          const SizedBox(height: 20),
+          Text(
+              '• Nationality / Indian ',
+              style: GoogleFonts.getFont('Delius',
+                  color: CustomColors.gray, fontSize: 13)),
+          const SizedBox(height: 20),
           Text(
               '• I have completed MCA from Mount Zion College of Engineering',
               style: GoogleFonts.getFont('Delius',

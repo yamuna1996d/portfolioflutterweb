@@ -55,7 +55,7 @@ class LowerContainer extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SkillCard(
-                          title: 'Techins Software Solutions',
+                          title: 'Techins Software Solutions | July - Present',
                           description:
                           'Developed highly functional set of flutter applications for Bookit E-commerce Platform.',
                           company: "Software Developer - Flutter",
@@ -65,7 +65,7 @@ class LowerContainer extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         SkillCard(
-                          title: 'Folea Film Factory PVT LTD',
+                          title: 'Folea Film Factory PVT LTD | April 2021 - June 2022',
                           company: "Software Developer - Flutter",
                           description:
                           ' * Developed a highly functional set of flutter applications for SPC PRANA.\n\n'
@@ -105,7 +105,7 @@ class LowerContainer extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SkillCard(
-                            title: 'Techins Software Solutions LLP',
+                            title: 'Techins Software Solutions | July - Present',
                             description:
                             'I’m developing android,ios and web applications using flutter platform.',
                             company: "Software Developer - Flutter",
@@ -114,7 +114,7 @@ class LowerContainer extends StatelessWidget {
                             ratio: 0.45),
                         const SizedBox(height: 10),
                         SkillCard(
-                            title: 'Folea Film Factory PVT LTD',
+                            title: 'Folea Film Factory PVT LTD | April 2021 - June 2022',
                             company: "Software Developer - Flutter",
                             description:
                             ' * Developed a highly functional set of flutter applications for SPC PRANA.\n\n'
